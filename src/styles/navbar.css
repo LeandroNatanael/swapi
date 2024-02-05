@@ -1,0 +1,41 @@
+.navbarStyle {
+    width: 250px;
+    height: 100vh;
+    background-color: #000;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    border-right: 2px solid #fff;
+}
+
+.navButton {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid #fff;
+}
+
+.navButton:hover {
+    background-color: #555;
+}
+
+.navButton:last-child {
+    border-bottom: none;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 80%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
