@@ -1,14 +1,23 @@
 import React from 'react'
 import '../styles/floatBar.css';
-import "../services/index.js"
+import '../services/index.js';
+import Fetch from './Fetch.jsx';
 
-const FloatBar = ({hover}) => {
+const FloatBar = ({ hover }) => {
 
-  console.log(hover)
+  const concatenateUrl = () => {
+    return hover !== null ? process.env.REACT_APP_BASEURL + '/' + hover : null;
+  };
+
+  const renderFloatBar = (data) => {
+    console.log(data);
+  };
+
+  const urlFloatBar = concatenateUrl();
 
   return (
     <div className='floatBar'>
-      <p></p>
+      {urlFloatBar && <Fetch url={urlFloatBar} render={renderFloatBar} />}
     </div>
   )
 }
