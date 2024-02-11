@@ -1,15 +1,8 @@
 
-const baseUrl = 'https://swapi.dev/api';
+const baseUrl = process.env.REACT_APP_BASEURL;
 
 const services = {
-    url: `${baseUrl}`,
-    FILMS: `${baseUrl}/films`,
-    PEOPLE: `${baseUrl}/people`,
-    PLANETS: `${baseUrl}/planets`,
-    SPECIES: `${baseUrl}/species`,
-    STARSHIPS: `${baseUrl}/starships`,
-    VEHICLES: `${baseUrl}/vehicles`,
+    url: baseUrl,
 }
-
 
 export default services;
